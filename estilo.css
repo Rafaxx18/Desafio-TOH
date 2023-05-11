@@ -1,0 +1,162 @@
+body{
+    margin:0;  /* o que tem na pag até o final fora de uma div */
+    padding: 0; /* as bordas dentro de uma div*/
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #160539(255, 255, 255);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+
+.header{
+    background-color: #2b105036;
+    background-image: linear-gradient(to bottom, #340B6B, #4c109b, #6615D1 
+      );
+      background-color: #2b105036;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px #4c109b solid ; /* bottom pra especificar o lado de baixo do retangulo*/
+}
+
+.header .container{
+ /* esse estilo só serve para containers que estão dentro desse header */
+     justify-content: space-between;
+}
+
+.header a{
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.agora{
+    font-weight: 800;
+}
+
+img{
+    padding: 4px;
+}
+
+.navbar{
+    width: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.titulo{
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.banner{
+    height: fit-content;
+    padding: 40px 0; /* ordem: top, right, bottom, left*/
+    background-color: #160539;
+    /* background-image: url('asset/casa2.jpg'); */
+    background-size: cover
+    ;
+}
+
+.banner .container{
+    height: 720px;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.banner p{
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+  width: 200px;
+}
+
+
+.banner img{
+display: flex;
+justify-content: end;
+}
+
+.banner .container spam{
+    font-weight: 800;
+}
+
+.teste{
+    background-color: #f5dee6;
+    color: #e6005a;
+    font-family: Barlow;
+    width: 400px;
+   border-radius: 2px;
+  
+}
+
+.teste .fonte{
+    color: #e6005a;
+    font-family: Barlow;
+    font-size: 35px;
+ 
+  
+}
+
+.botao{
+    align-items: center;
+justify-content: center;
+    color: #f5dee6;
+    background-color : #e6005a;
+    font-family: Barlow;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 10px;
+  
+}
+
+.input{
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.rodape{
+    background-color:  #32B9CD;
+    justify-items: flex-end;
+    align-items: center;
+    color: white;
+     display: flex;
+    width: 15000px;
+    height: 500px;
+    font-size: medium;
+
+}
+.rodape p{
+  
+    justify-items: center;
+    align-items: center;
+     display: flex;
+     font-family: Barlow;
+
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20vh;
+   backdrop-filter: blur(23px);
+
+}
+
+.info .container{
+
+}
+
+
