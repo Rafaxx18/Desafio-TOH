@@ -42,6 +42,7 @@ body{
 img{
     width: 29vh;
     height: 12vh;
+    top: 2px;
     padding: 4px;
 }
 
