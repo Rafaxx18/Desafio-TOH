@@ -37,7 +37,9 @@ body{
     font-weight: 800;
 }
 
-img{
+.header img{
+    width: 29vh;
+    height: 12vh;
     padding: 4px;
 }
 
@@ -170,10 +172,10 @@ justify-content: center;
  .retangulo{
     justify-content: center;
 position: absolute;
-width: 160vh;
+width: 177vh;
 height: 47vh;
 left: 25vh;
-top: 95vh;
+top: 129vh;
 }
 
 /* Rectangle 1 */
@@ -214,7 +216,7 @@ color: #000000;
 
 .sla{
 height: 70vh;
-width: 203vh;
+width: 228vh;
 display: flex;
 justify-content: center;
     background-color:#160539;
@@ -225,8 +227,8 @@ justify-content: center;
     display: flex;
 justify-content: center;
 position: absolute;
-width: 1902px;
-height: 1700px;
+width: 228vh;
+height: 210vh;
 left: 0px;
 
 background: #D9D9D9;
@@ -235,10 +237,10 @@ background: #D9D9D9;
 /* Rectangle 6 */
 .carrossel{
 position: absolute;
-width: 159vh;
-height: 80vh;
+width: 185vh;
+height: 85vh;
 left: 24vh;
-top: 250px;
+top: 27vh;
 
 
 background: url(../asset/toh-king-and-luz.png);
@@ -253,9 +255,9 @@ h1{
 /* Rectangle 10 */
 .card1{
 position: absolute;
-width: 354px;
-height: 428px;
-left: 23vh;
+width: 332px;
+height: 420px;
+left: 25vh;
 top: 130vh;
 
 background: #2C0743;
@@ -264,9 +266,9 @@ border-radius: 35px;
 
 .card2{
     position: absolute;
-    width: 354px;
-    height: 428px;
-    left: 85vh;
+    width: 332px;
+    height: 420px;
+    left: 89vh;
     top: 130vh;
     
     background: #2C0743;
@@ -275,12 +277,21 @@ border-radius: 35px;
 
     .card3{
         position: absolute;
-        width: 354px;
-        height: 428px;
-        left: 145vh;
+        width: 332px;
+        height: 420px;
+        left: 153vh;
         top: 130vh;
         
         background: #2C0743;
         border-radius: 35px;
-        }
+        
+    }
+
+.final{
+    width: 228vh;
+    height: 90vh;
+    background-color: #160539;
+    position: absolute;
+    top: 405vh;
+}
 
