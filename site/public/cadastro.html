@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/cadastro.css">   <!-- ctrl + espaço (caminho dos arquivos) -->
-
+    <script src="./js/funcoes.js"></script>
 </head>
 <body>
     <div class="header">  <!--div.header -->
        <div class="container">
-      <a href="index.html"> <img src="asset/the-owl-house-5eef59fdb8241.png" alt="" height="100px" width="250px"  ></a>
+      <a href="index.html"> <img src="../assets/the-owl-house-5eef59fdb8241.png" alt="" height="100px" width="250px"  ></a>
                 <!-- <h1 class="titulo">AcquaTec</h1>                -->
                   
                 <ul class="navbar">
@@ -45,16 +45,19 @@
                    Usuário <input id="nome_input"><br>
                    Email <input id="email_input"><br>
                    Senha <input  type='password' id="senha_input"><br>
-                   Sexo 
-                    <input type="radio" id="masculino" value="masculino"
+                   <!-- Gênero 
+                    <input type="radio" name='genero' id="masculino" value="masculino"
                            checked>
                     <label for="masculino">Masculino</label>
-                    <input type="radio" id="feminino" value="feminino">
-                      <label for="feminino">Feminino</label>
+                    <input type="radio" name='genero'id="feminino" value="feminino">
+                      <label for="feminino">Feminino</label> 
+                      <input type="radio" name="genero" id="outro" value="outro">
+                      <label for="feminino">Outro</label>  -->
 
                     </div>
 
                 <button onclick="cadastrar()">Cadastrar</button>
+
                 </div>
                 
             </div>
@@ -81,7 +84,8 @@
         var senhaVar = senha_input.value;
       
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" ) {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
@@ -89,7 +93,7 @@
             return false;
         }
         else {
-            setInterval(sumirMensagem, 5000)
+           
         }
 
         // Enviando o valor da nova input
@@ -103,17 +107,16 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
-                senhaServer: senhaVar
+                senhaServer: senhaVar,
+               
+                
             })
         }).then(function (resposta) {
 
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                cardErro.style.display = "block";
-
-                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
+              
                 setTimeout(() => {
                     window.location = "login.html";
                 }, "2000")
