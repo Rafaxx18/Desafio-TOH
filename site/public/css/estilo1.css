@@ -14,6 +14,21 @@ body{
 
 }
 
+.bolhas{
+    position: absolute;
+}
+
+.bolhas spam{
+    width: 30px;
+    height: 30px;    height: 30px;
+
+    background:#ffee52;
+    margin: 0 4px;
+    border-radius: 50%;
+ ;
+
+}
+
 .header{
     background-color: #2b105036;
     background-image: linear-gradient(to bottom, #340B6B, #4c109b, #6615D1 );
@@ -79,6 +94,7 @@ body{
 
 .banner p{
     height: fit-content;
+    font-size: 4vh;
     margin: 0;
     padding: 0;
 
@@ -200,11 +216,11 @@ border-radius: 57px;
 
 /* Você terá acesso as informaçoẽs dos seus personagens favoritos */
 .retangulo-1 p{
-position: absolute;
+/* position: absolute;
 width: 300px;
 height: 138px;
 left: 154px;
-top: 160px;
+top: 160px; */
 
 font-family: 'Inter';
 font-style: normal;
@@ -222,7 +238,7 @@ color: #000000;
 
 .sla{
 height: 70vh;
-width: 201vh;
+width: 100%;
 display: flex;
 justify-content: center;
     background-color:#160539;
@@ -230,11 +246,10 @@ justify-content: center;
 
 .novidade{
     /* Rectangle 5 */
-display: flex;
 justify-content: center;
 /* position: absolute; */
-width: 201vh;
-height: 210vh;
+width: 100%;
+height: 230vh;
 /* left: 0px; */
 
 background: #D9D9D9;
@@ -247,24 +262,34 @@ width: 185vh;
 height: 85vh;
 left: 24vh;
 top: 27vh; */
-display: flex;
-justify-content: center;
+align-items: center;
+
 width: 200vh;
-height: 50vh;
-margin-top: 37vh;
+height: 90vh;
+margin-top: 11vh;
+margin-bottom: 20vh;
 
 background: url('../assets/toh-king-and-luz.png');
 border-radius: 21px;
 
 }
 
+.center{
+    display: flex;
+    justify-content:center
+}
+
 h1{
     display: flex;
     justify-content: center;
     font-size: 60px;
-    padding: auto;
+
 }
 
+.cards{
+    display:flex;
+    justify-content: space-around;
+}
 /* Rectangle 10 */
 .card1{
 /* position: absolute; */
@@ -307,11 +332,11 @@ border-radius: 35px;
     }
 
 .final{
-    width: 201vh;
+    width: 100%;
     height: 90vh;
     background-color: #160539;
-    position: absolute;
-    top: 405vh;
+ 
+ 
 }
 
 .inputs-cad{
