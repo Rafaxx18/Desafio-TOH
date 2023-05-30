@@ -171,12 +171,12 @@ color: #000000;
     color: #f8f8f8;
   
   }
-
+/* 
   input{
     border-radius: 23px;
     border: #6721c836;
     height: 23px;
-  }
+  } */
 
   label{
     display: flex;
@@ -184,8 +184,15 @@ color: #000000;
   }
 
   .inputs-cad  div{
+   width: 54vh;
     display: flex;
     justify-content: space-between;
  align-items: center;
- 
+ border-bottom: 1px #6e1fd5 solid;
+ padding-top: 10px;
+  }
+
+  .input-field input{
+    border: none;
+    background-color: transparent;
   }
