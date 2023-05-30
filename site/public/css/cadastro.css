@@ -10,7 +10,8 @@ body{
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
 
 }
 
@@ -73,7 +74,7 @@ img{
 /* casinha e texto da home */
 .banner .container{
     padding-top: 9vh; 
-    height: 900px;
+    height: 300px;
     font-size: 36px;
     align-items: center;
 }
@@ -95,23 +96,26 @@ justify-content: center;
 }
 
 
- .retangulo{
+ /* .retangulo{
+    display: flex;
     justify-content: center;
-position: absolute;
-width: 170vh;
+
+width: 120vh;
 height: 67vh;
-left: 32vh;
-top: 20vh;
-}
+background-color: #32b9cd;
+
+} */
 
 /* Rectangle 1 */
 .retangulo-1{
-justify-content: center;
-position: absolute;
+width: 100vh;
+height: 55vh;
+
+/* position: absolute;
 left: 0%;
 right: 0%;
 top: 0%;
-bottom: 0%;
+bottom: 0%; */
 background: rgba(255, 255, 255, 0.66);
 border-radius: 57px;
 }
@@ -119,11 +123,13 @@ border-radius: 57px;
 
 /* Você terá acesso as informaçoẽs dos seus personagens favoritos */
 .retangulo-1 p{
-position: absolute;
+    display: flex;
+    align-items: center;
+/* position: absolute;
 width: 300px;
 height: 138px;
 left: 154px;
-top: 160px;
+top: 160px; */
 
 font-family: 'Inter';
 font-style: normal;
@@ -150,7 +156,36 @@ color: #000000;
   
 
   .inputs-cad {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
  align-items: center;
+    border-radius: 23px;
+  }
 
+  .botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #f8f8f8;
+  
+  }
 
+  input{
+    border-radius: 23px;
+    border: #6721c836;
+    height: 23px;
+  }
+
+  label{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inputs-cad  div{
+    display: flex;
+    justify-content: space-between;
+ align-items: center;
+ 
   }
