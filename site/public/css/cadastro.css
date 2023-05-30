@@ -169,7 +169,18 @@ color: #000000;
     align-items: center;
     border-radius: 20px;
     color: #f8f8f8;
+    padding-top: 4vh;
   
+  
+  }
+
+  .botao button{
+
+    width: 13vh;
+    height: 7vh;
+    border-radius: 15px;
+    color: #f8f8f8;
+    background-image: linear-gradient(to bottom, #340B6B, #4c109b, #6615D1 );
   }
 /* 
   input{
@@ -181,6 +192,7 @@ color: #000000;
   label{
     display: flex;
     flex-direction: row;
+    font-size: 22px;
   }
 
   .inputs-cad  div{
