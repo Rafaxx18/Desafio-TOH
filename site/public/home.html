@@ -18,7 +18,7 @@
                   
                 <ul class="navbar">
                         <li>
-                            <a href="#"class="agora">Inicio</a>
+                            <a href="index.html"class="agora">Inicio</a>
                         </li>
                         <li>
                             <a href="#">Temporadas</a>
@@ -48,8 +48,13 @@
 
         <div class="container2">
              <div class="retangulo">
-                Gráficos
-                <canvas id="myChart" width="2px" height="-2px"></canvas>
+              <div class="center">
+             <div>
+                <canvas id="myChart" width="2cm" height="1cm"></canvas>
+             </div>
+             <div class="pie">
+              <canvas id="myChart2"></canvas>
+           </div>
             </div>
         </div>
 
@@ -132,8 +137,50 @@ const myChart = new Chart(
 );
 
 // Instantly assign Chart.js version
-const chartVersion = document.getElementById('chartVersion');
-chartVersion.innerText = Chart.version;
+// const chartVersion = document.getElementById('chartVersion');
+// chartVersion.innerText = Chart.version;
+
+// -------------------------------------------------------------------------------------------------
+const data2 = {
+  labels: ['Fire', 'Ice', 'Plant', 'Light'],
+  datasets: [
+    {
+      label: 'Dataset 1',
+       data: [18, 12, 6, 9],
+      
+    }
+  ]
+};
+
+const config2 = {
+  type: 'doughnut',
+  data: data2,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Doughnut Chart'
+      }
+    }
+  },
+};
+
+
+
+
+// render init block
+const myChart2 = new Chart(
+  document.getElementById('myChart2'),
+  config2
+);
+
+// // Instantly assign Chart.js version
+// const chartVersion2 = document.getElementById('chartVersion2');
+// chartVersion.innerText = Chart.version2;
 </script>
 
       

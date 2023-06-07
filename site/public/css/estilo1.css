@@ -232,9 +232,7 @@ color: #000000;
 }
 
 
-.info .container{
 
-}
 
 .sla{
 height: 70vh;
@@ -283,6 +281,7 @@ h1{
     display: flex;
     justify-content: center;
     font-size: 60px;
+    margin: none;
 
 }
 
